@@ -2,11 +2,11 @@ const fs = require('fs');
 const path = require('path');
 
 class FileHandler {
-    CreateFile(fullFilePath) {
+    CreateFile(fullFilePath, text) {
         console.log(fullFilePath);
         if (!fs.existsSync(fullFilePath))
-            fs.writeFile(fullFilePath, '', () => {
-                console.log('file was written');
+            fs.writeFile(fullFilePath, text, () => {
+                console.log(`${fullFilePath} was written`);
         });
     }
 

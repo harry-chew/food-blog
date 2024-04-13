@@ -4,12 +4,14 @@
   "description": "Harry likes food, blog about it!",
   "main": "index.js",
   "scripts": {
-    "start" : "nodemon ./index.js"
+    "start": "nodemon ./index.js"
   },
   "author": "Harry Chew",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.10",
     "express": "^4.19.2",
+    "node-json-db": "^2.3.0",
     "nodemon": "^3.1.0"
   }
 }
